@@ -4,12 +4,12 @@ app = Flask(__name__)
 
 
 class Author:
-    def __init__(self, name):
-        # self.email = email
-        # self.profile_id = profile_id
+    def __init__(self, email, id_profile, name, avatar, footer):
+        self.email = email
+        self.id_profile = id_profile
         self.name = name
-        # self.avatar = avatar
-        # self.footer = footer
+        self.avatar = avatar
+        self.footer = footer
 
 
 class Post:
@@ -26,7 +26,7 @@ def hello_world():
         print(request.get_json(force=True))
         return 'OK', 200
     else:
-        author = Author('Bryan')
+        author = Author('bryan@gmail.com', 1, 'Bryan', 'xd.img', '???')
         author = json.dumps(author.__dict__)
         post = Post(1, 'XD', author)
         post = json.dumps(post.__dict__)
@@ -34,10 +34,9 @@ def hello_world():
         return jsonify(message)
 
 
-@app.route('/test', methods=['GET', 'POST'])
+@app.route('/test', methods=['POST'])
 def test_page():
-    test = 'test'
-    return render_template('index.html', test=test)
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
