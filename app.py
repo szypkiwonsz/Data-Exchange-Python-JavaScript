@@ -22,7 +22,6 @@ class Post:
 @app.route('/hello', methods=['GET', 'POST'])
 def hello_world():
     if request.method == 'POST':
-        print('Incoming...')
         print(request.get_json(force=True))
         return 'OK', 200
     else:
@@ -34,7 +33,7 @@ def hello_world():
         return jsonify(message)
 
 
-@app.route('/test', methods=['POST'])
+@app.route('/test')
 def test_page():
     return render_template('index.html')
 
