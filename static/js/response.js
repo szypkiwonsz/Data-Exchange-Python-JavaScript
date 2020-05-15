@@ -1,6 +1,5 @@
-fetch('/hello', {})
+fetch('/hello')
     .then(function (response) {
-
         return response.json();
     })
     .then(function (json) {
@@ -28,20 +27,11 @@ fetch('/hello', {})
         document.getElementById('postTextGet').innerText += text;
     });
 
-fetch('/hello', {
-
-    // Specify the method
-    method: 'POST',
-    async: false,
-    // A JSON payload
-    body: JSON.stringify({"Author": 'o'})
-}).then(function (response) {
-    return response.text();
-
-}).then(function (text) {
-
-    console.log('POST response: ');
-
-    // Should be 'OK' if everything was successful
-    console.log(text);
-});
+function postData() {
+    fetch('/hello', {
+        method: 'POST',
+        body: JSON.stringify({"Author": 'o'})
+    }).then(function (response) {
+        return response.text();
+    });
+}
