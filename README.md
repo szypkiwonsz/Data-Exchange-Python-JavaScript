@@ -33,7 +33,7 @@ Jeśli wykonałeś wszystko zgodnie z instrukcją, po włączeniu strony powinny
 ## Stworzony za pomocą
 
 * [Python 3.8](https://www.python.org/) - język programowania
-* [JavaScript] - język programowania
+* JavaScript - język programowania
 * [Flask 1.1.2](https://flask.palletsprojects.com/) -  framework aplikacji webowych
 
 ## Autor
