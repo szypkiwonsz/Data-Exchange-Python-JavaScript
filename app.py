@@ -22,7 +22,9 @@ class Post:
 @app.route('/message', methods=['GET', 'POST'])
 def get_post():
     if request.method == 'POST':
-        print(request.get_json(force=True))
+        message = request.get_json(force=True)
+        json_message = json.dumps(message, indent=2)
+        print(json_message)
         return 'OK', 200
     else:
         post_id = 1
@@ -35,6 +37,8 @@ def get_post():
 
         author = Author(author_id, author_email, author_name, author_avatar, author_footer)
         author = json.dumps(author.__dict__)
+        #
+        # print(author)
 
         post = Post(post_id, post_text, author)
         post = json.dumps(post.__dict__)
