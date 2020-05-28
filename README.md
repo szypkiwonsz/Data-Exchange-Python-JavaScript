@@ -20,6 +20,9 @@ pip install -r requirements.txt
 Pobierz projekt
 ```
 ```
+Zainstaluj brakujące biblioteki
+```
+```
 Uruchom terminal z wybranym folderem "Data-Exchange-Python-JavaScript>"
 ```
 ```
