@@ -8,10 +8,10 @@ Ta instrukcja pokaże Ci jak uruchomić skrypt na swoim systemie oraz jakich zas
 
 ### Wymagania wstępne
 
-Flask
+Biblioteki
 
 ```
-pip install Flask
+pip install -r requirements.txt
 ```
 ---
 ### Jak uruchomić skrypty
