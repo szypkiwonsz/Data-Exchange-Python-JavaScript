@@ -37,8 +37,6 @@ def get_post():
 
         author = Author(author_id, author_email, author_name, author_avatar, author_footer)
         author = json.dumps(author.__dict__)
-        #
-        # print(author)
 
         post = Post(post_id, post_text, author)
         post = json.dumps(post.__dict__)
