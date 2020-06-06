@@ -1,45 +1,45 @@
 # Data-Exchange-Python-JavaScript
 
-Skrypty do obsługi wymiany danych w formacie JSON, napisane w JavaScript (po stronie klienta), oraz w Pythonie (po stronie serwera). Skrypt po stronie serwera wysyła jeden zserializowany obiekt, który może odczytać klient.
+Scripts for data exchange in JSON format, written in JavaScript (on the client side), and in Python (on the server side). The server-side script sends one serialized object that the client can read.
 
-## Od czego zacząć
+## Getting Started
 
-Ta instrukcja pokaże Ci jak uruchomić skrypt na swoim systemie oraz jakich zasad powinienieś się trzymać.
+These instructions will get you a copy of the project up and running on your local machine.
 
-### Wymagania wstępne
+### Prerequisites
 
-Flask
+Libraries and Packages
 
 ```
-pip install Flask
+pip install -r requirements.txt
 ```
 ---
-### Jak uruchomić skrypty
+### How to Run Scripts
 
 ```
-Pobierz projekt
+Download project
 ```
 ```
-Uruchom terminal z wybranym folderem "Data-Exchange-Python-JavaScript>"
+Run terminal with choosen folder "Data-Exchange-Python-JavaScript>"
 ```
 ```
-Wpisz komende "flask run", aby uruchomić serwer.
+Type command "flask run", to start the server.
 ```
 
-Jeśli wykonałeś wszystko zgodnie z instrukcją, po włączeniu strony powinny wyświetlić się dwa posty. Dane tego powyżej zostały pobrane jako obiekt z Pythona do JavaScriptu a następnie wyświetlone (dzieje się to automatycznie). Post poniżej jest wyświetlany, po wciśnieciu przycisku na stronie dane pobierane są przez JavaScript, a następnie wysłane do Pythona.
+If you did everything as instructed, you should see two posts on the page. The data of one above was downloaded as an object from Python to JavaScript, and then displayed (it happens automatically). The post below is displayed and after pressing the button on the page, the data is downloaded by JavaScript and then sent to Python.
 
 ---
 
-## Stworzony za pomocą
+## Built With
 
-* [Python 3.8](https://www.python.org/) - język programowania
-* JavaScript - język programowania
-* [Flask 1.1.2](https://flask.palletsprojects.com/) -  framework aplikacji webowych
+* [Python 3.8](https://www.python.org/) - The programming language used
+* JavaScript - A programming language used
+* [Flask 1.1.2](https://flask.palletsprojects.com/) -  Micro web framework
 
-## Autor
+## Authors
 
 * **Jan Kacper Sawicki** - [szypkiwonsz](https://github.com/szypkiwonsz)
 
-## Informacje dodatkowe
+## Acknowledgments
 
-* Skrypt został napisany jako zadanie na studia.
+* The script was written as a study assignment.
